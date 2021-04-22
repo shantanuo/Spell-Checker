@@ -1,6 +1,48 @@
 SET UTF-8
 NEEDAFFIX F
 NOSUGGEST S
+NOSPLITSUGS
+
+TRY आईऊऐऔखघछझठढणनथधफभशषक्षज्ञ
+
+REP 36
+REP टय़ ट्य
+REP ठय़ ठ्य
+REP डय़ ड्य
+REP ढय़ ढ्य
+REP हय़ ह्य
+REP स श
+REP स ष
+REP श ष
+REP प फ
+REP ज झ
+REP ल ळ
+REP न ण
+REP त ट
+REP ड ढ
+REP ण्ट ंट
+REP ण्ठ ंठ
+REP ण्ड ंड
+REP ण्ढ ंढ
+REP न्त ंत
+REP न्थ ंथ
+REP न्द ंद
+REP न्ध ंध
+REP ध्द द्ध
+REP ग्य ज्ञ
+REP रि ऋ
+REP ि ी
+REP ी ि
+REP ु ू
+REP ू ु
+REP ो ौ
+REP ॉं ाँ
+REP ॅं ँ
+REP ाॅ ॉ
+REP अॉ ऑ
+REP अॅ ॲ
+REP : ः
+
 
 SFX N Y 1
 SFX N णे 0 णे
@@ -160,16 +202,22 @@ SFX R णे ावलेल्यां/Abcd णे
 SFX R णे ावल्या/Aacd णे
 SFX R णे वणे/O णे
 
-SFX P Y 84
+SFX P Y 103
 SFX P णे तो णे
 SFX P णे ते णे
 SFX P णे तोस णे
 SFX P णे तेस णे
 SFX P णे ता णे
+SFX P णे ताय णे
+SFX P णे तोय णे
 SFX P णे तात णे
 SFX P णे तील णे
 SFX P णे त णे
 SFX P णे ताना णे
+SFX P णे तानाची णे
+SFX P णे तानाचा णे
+SFX P णे तानाचे णे
+SFX P णे तानाच्या णे
 SFX P णे तास णे
 SFX P णे तीस णे
 SFX P णे ती णे
@@ -213,6 +261,11 @@ SFX P णे ेनात णे
 SFX P णे ेनासं णे
 SFX P णे ेनासा णे
 SFX P णे ेनासे णे
+SFX P णे ेपर्यंत णे
+SFX P णे ेपर्यंतचा णे
+SFX P णे ेपर्यंतची णे
+SFX P णे ेपर्यंतचे णे
+SFX P णे ेपर्यंतच्या णे
 SFX P णे ेल णे
 SFX P णे ीन णे
 SFX P णे ेन णे
@@ -220,8 +273,14 @@ SFX P णे ील णे
 SFX P णे ा णे
 SFX P णे ो णे
 SFX P णे ोत णे
+SFX P णे ावयाचा णे 
+SFX P णे ावयाची णे 
+SFX P णे ावयाचे णे 
+SFX P णे ावयाच्या णे
+SFX P णे ावयास णे
 SFX P णे ावा णे
 SFX P णे ावात णे
+SFX P णे ावासा णे
 SFX P णे ावी णे
 SFX P णे ावीत णे
 SFX P णे ावे णे
@@ -230,7 +289,9 @@ SFX P णे ाव्या णे
 SFX P णे ाव्यात णे
 SFX P णे ावास णे
 SFX P णे ावीस णे
+SFX P णे ावीशी णे
 SFX P णे ावेस णे
+SFX P णे ावेसे णे
 SFX P णे ाव्यास णे
 SFX P णे ून णे
 SFX P णे शील णे
@@ -423,6 +484,9 @@ SFX w Y 3
 SFX w 0 ता .
 SFX w 0 ते/FAacd .
 SFX w 0 तां/FAbcd .
+
+SFX u Y 1
+SFX u 0 पणा/Aacd .
 
 SFX A Y 322
 SFX A 0 अंती .

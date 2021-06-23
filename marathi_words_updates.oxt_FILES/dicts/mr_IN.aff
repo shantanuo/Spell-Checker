@@ -1,9 +1,15 @@
 SET UTF-8
 NEEDAFFIX F
 NOSUGGEST S
+FORBIDDENWORD x
 NOSPLITSUGS
 
 TRY आईऊऐऔखघछझठढणनथधफभशषक्षज्ञ
+
+ICONV 3
+ICONV श्‍ श्
+ICONV क्‍ क्
+ICONV र्‍ ऱ्
 
 REP 36
 REP टय़ ट्य
@@ -11,6 +17,7 @@ REP ठय़ ठ्य
 REP डय़ ड्य
 REP ढय़ ढ्य
 REP हय़ ह्य
+REP दय़ द्य
 REP स श
 REP स ष
 REP श ष
@@ -42,13 +49,49 @@ REP ाॅ ॉ
 REP अॉ ऑ
 REP अॅ ॲ
 REP : ः
+REP ्रु ृ
+REP ्रू ृ
+REP ै ॅ 
+REP स्त्र स्र
+REP स्र स्त्र
+REP करूद्या करू_द्या
+REP करुया करू_या
+REP घेऊद्या घेऊ_द्या
+REP घेऊया घेऊ_या
+REP जाऊद्या जाऊ_द्या
+REP येऊद्या येऊ_द्या
+REP जाऊया जाऊ_या
+REP दोघीजणी दोघी_जणी
+REP दोघेजण दोघे_जण
+REP तिघीजणी तिघी_जणी
+REP तिघेजण तिघे_जण
+REP चौघीजणी चौघी_जणी
+REP चौघेजण चौघे_जण
+REP सर्वजण सर्व_जण
+REP त्याप्रकारे त्या_प्रकारे
+REP नानाप्रकारे नाना_प्रकारे
+REP त्याकाळी त्या_काळी
+REP त्यावेळी त्या_वेळी
+REP ज्याकाळी ज्या_काळी
+REP ज्यावेळी ज्या_वेळी
+REP निघूया निघू_या
+REP नाही_तर नाहीतर
+REP नाही_तरी नाहीतरी
+REP नाही_तेव्हा नाहीतेव्हा
+REP ऊन वून
+REP वून ऊन
+REP लु लू 
+REP वू ऊ 
+REP रि री
 
 
 SFX N Y 1
 SFX N णे 0 णे
 
-SFX Q Y 77
+SFX Q Y 85
 SFX Q णे वतो णे
+SFX Q णे वतोय णे
+SFX Q णे वतंय णे
 SFX Q णे वते णे
 SFX Q णे वतोस णे
 SFX Q णे वतेस णे
@@ -92,6 +135,7 @@ SFX Q णे वेल णे
 SFX Q णे वीन णे
 SFX Q णे वेन णे
 SFX Q णे वील णे
+SFX Q णे वीत णे
 SFX Q णे वा णे
 SFX Q णे वो णे
 SFX Q णे वोत णे
@@ -107,9 +151,12 @@ SFX Q णे वावास णे
 SFX Q णे वावीस णे
 SFX Q णे वावेस णे
 SFX Q णे वाव्यास णे
+SFX Q णे वावं णे
+SFX Q णे वायचं णे
 SFX Q णे वायचा णे
 SFX Q णे वायची णे
 SFX Q णे वायचे णे
+SFX Q णे वायचो णे
 SFX Q णे वायच्या णे
 SFX Q णे वायला णे
 SFX Q णे वून णे
@@ -118,6 +165,7 @@ SFX Q णे वणार णे
 SFX Q णे वणारा णे
 SFX Q णे वणारी णे
 SFX Q णे वणारे णे
+SFX Q णे वणं णे
 SFX Q णे वणाऱ्या/Aacd णे
 SFX Q णे वणाऱ्यां/Abcd णे
 SFX Q णे वण्या/Aacd णे
@@ -125,8 +173,9 @@ SFX Q णे वण्यां/Abcd णे
 SFX Q णे वलेल्या/Aacd णे
 SFX Q णे वलेल्यां/Abcd णे
 SFX Q णे वल्या/Aacd णे
+SFX Q णे वणे/O णे
 
-SFX R Y 74
+SFX R Y 75
 SFX R णे ाविणे/P णे
 SFX R णे ावतो णे
 SFX R णे ावते णे
@@ -152,7 +201,7 @@ SFX R णे ावलाय णे
 SFX R णे ावली णे
 SFX R णे ावलीस णे
 SFX R णे ावले णे
-SFX R णे ावलं णे
+SFX R णे ावलं/Z णे
 SFX R णे ावलेला णे
 SFX R णे ावलेलो णे
 SFX R णे ावलेली णे
@@ -187,12 +236,13 @@ SFX R णे ावावास णे
 SFX R णे ावावीस णे
 SFX R णे ावावेस णे
 SFX R णे ावाव्यास णे
-SFX R णे ावून णे
+SFX R णे ावून/Z णे
 SFX R णे ावशील णे
-SFX R णे ावणार णे
+SFX R णे ावणार/Z णे
 SFX R णे ावणारा णे
 SFX R णे ावणारी णे
 SFX R णे ावणारे णे
+SFX R णे ावणं णे
 SFX R णे ावणाऱ्या/Aacd णे
 SFX R णे ावणाऱ्यां/Abcd णे
 SFX R णे ावण्या/Aacd णे
@@ -200,19 +250,23 @@ SFX R णे ावण्यां/Abcd णे
 SFX R णे ावलेल्या/Aacd णे
 SFX R णे ावलेल्यां/Abcd णे
 SFX R णे ावल्या/Aacd णे
-SFX R णे वणे/O णे
+SFX R णे ावणे/O णे
 
-SFX P Y 103
+SFX P Y 117
+SFX P णे णं णे
 SFX P णे तो णे
 SFX P णे ते णे
+SFX P णे तेय णे
 SFX P णे तोस णे
 SFX P णे तेस णे
 SFX P णे ता णे
+SFX P णे ताहेत णे
 SFX P णे ताय णे
-SFX P णे तोय णे
 SFX P णे तात णे
+SFX P णे तोय णे
 SFX P णे तील णे
 SFX P णे त णे
+SFX P णे तं णे
 SFX P णे ताना णे
 SFX P णे तानाची णे
 SFX P णे तानाचा णे
@@ -229,33 +283,38 @@ SFX P णे लस णे
 SFX P णे लंस णे
 SFX P णे लय णे
 SFX P णे लंय णे
+SFX P णे तय णे
+SFX P णे तंय णे
 SFX P णे लाय णे
 SFX P णे ली णे
+SFX P णे लीय णे
 SFX P णे लीस णे
-SFX P णे ले णे
+SFX P णे लीत णे
+SFX P णे ले/Z णे
 SFX P णे लं णे
 SFX P णे लेला णे
 SFX P णे लेलो णे
 SFX P णे लेली णे
-SFX P णे लेले णे
-SFX P णे लेलं णे
-SFX P णे लीत णे
+SFX P णे लेले/Z णे
+SFX P णे लेलं/Z णे
 SFX P णे लेत णे
 SFX P णे लेस णे
 SFX P णे ल्यात णे
 SFX P णे ल्यास णे
 SFX P णे ल्याच णे
 SFX P णे ल्याचं णे
-SFX P णे लो णे
+SFX P णे लो/Z णे
+SFX P णे लोय णे
 SFX P णे ू णे
 SFX P णे ाल णे
-SFX P णे ायचं णे
-SFX P णे ायचा णे
-SFX P णे ायची णे
-SFX P णे ायचे णे
+SFX P णे ायचं/Z णे
+SFX P णे ायचंय णे
+SFX P णे ायचा/Z णे
+SFX P णे ायची/Z णे
+SFX P णे ायचे/Z णे
 SFX P णे ायचो णे
 SFX P णे ायच्या णे
-SFX P णे ायला णे
+SFX P णे ायला/Z णे
 SFX P णे ेना णे
 SFX P णे ेनात णे
 SFX P णे ेनासं णे
@@ -271,6 +330,7 @@ SFX P णे ीन णे
 SFX P णे ेन णे
 SFX P णे ील णे
 SFX P णे ा णे
+SFX P णे े णे
 SFX P णे ो णे
 SFX P णे ोत णे
 SFX P णे ावयाचा णे 
@@ -283,7 +343,9 @@ SFX P णे ावात णे
 SFX P णे ावासा णे
 SFX P णे ावी णे
 SFX P णे ावीत णे
-SFX P णे ावे णे
+SFX P णे ावे/Z णे
+SFX P णे ावं णे
+SFX P णे ावंसं णे
 SFX P णे ावेत णे
 SFX P णे ाव्या णे
 SFX P णे ाव्यात णे
@@ -295,10 +357,11 @@ SFX P णे ावेसे णे
 SFX P णे ाव्यास णे
 SFX P णे ून णे
 SFX P णे शील णे
-SFX P णे णार णे
+SFX P णे णार/Z णे
 SFX P णे णारा णे
 SFX P णे णारी णे
 SFX P णे णारे णे
+SFX P णे णारं णे
 SFX P णे णाऱ्या/Aacd णे
 SFX P णे णाऱ्यां/Abcd णे
 SFX P णे ण्या/Aacd णे
@@ -306,8 +369,10 @@ SFX P णे ण्यां/Abcd णे
 SFX P णे लेल्या/Aacd णे
 SFX P णे लेल्यां/Abcd णे
 SFX P णे ल्या/Aacd णे
+SFX P णे ल्यानं णे
 
-SFX O Y 40
+
+SFX O Y 41
 SFX O णे ितो णे
 SFX O णे िते णे
 SFX O णे ितोस णे
@@ -330,6 +395,7 @@ SFX O णे िले णे
 SFX O णे िलेला णे
 SFX O णे िलेली णे
 SFX O णे िलेले णे
+SFX O णे िलेलं णे
 SFX O णे िलीत णे
 SFX O णे िलेत णे
 SFX O णे िलेस णे
@@ -384,7 +450,8 @@ PFX m 0 उप .
 PFX & Y	1
 PFX & 0 अर्थ .
 
-SFX q Y 7
+SFX q Y 8
+SFX q 0 शे/acd ीस
 SFX q ीस िसा/FAacd ीस
 SFX q ीस िसां/FAbcd ीस
 SFX q ीस िशी/Aacd ीस
@@ -392,6 +459,7 @@ SFX q ीस िसावा ीस
 SFX q ीस िसावी ीस
 SFX q ीस िसावे ीस
 SFX q ीस िसाव्या/Aacd ीस
+
 
 SFX e Y 8
 SFX e ा ्या/AFacd ा
@@ -462,11 +530,15 @@ SFX M णे विलेल्यां/Abcd णे
 SFX M णे विल्या/Aacd णे
 
 
-SFX T Y 4
+SFX T Y 8
 SFX T णे लेल्या/Aacd णे
 SFX T णे लेल्यां/Abcd णे
 SFX T णे ल्या/Aacd णे
 SFX T णे 0/Fc णे
+SFX T णे लेला णे
+SFX T णे लेली णे
+SFX T णे लेले णे
+SFX T णे लेलो णे
 
 SFX j Y 1
 SFX j ा े/AFacd ा
@@ -485,10 +557,15 @@ SFX w 0 ता .
 SFX w 0 ते/FAacd .
 SFX w 0 तां/FAbcd .
 
-SFX u Y 1
+SFX u Y 3
 SFX u 0 पणा/Aacd .
+SFX u 0 पणे .
+SFX u 0 पण .
 
-SFX A Y 322
+SFX y Y 1
+SFX y 0 ्स/ac .
+
+SFX A Y 324
 SFX A 0 अंती .
 SFX A 0 अर्थी .
 SFX A 0 आतून .
@@ -570,6 +647,8 @@ SFX A 0 जवळच्या .
 SFX A 0 जवळला .
 SFX A 0 जागी .
 SFX A 0 जोगा .
+SFX A 0 जोगी .
+SFX A 0 जोगे .
 SFX A 0 ठायी .
 SFX A 0 तम .
 SFX A 0 तर .
@@ -786,7 +865,7 @@ SFX A 0 समोरला .
 SFX A 0 सवे .
 SFX A 0 सह .
 SFX A 0 सहित .
-SFX A 0 साठी .
+SFX A 0 साठी/Z .
 SFX A 0 साठीचा .
 SFX A 0 साठीची .
 SFX A 0 साठीचे .

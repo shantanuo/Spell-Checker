@@ -11,4 +11,6 @@ cd Spell-Checker/
 
 docker build -t shantanuo/flaskspellarm .
 
-docker run -p 5000:5000 -d shantanuo/flaskspellarm
+docker run  --restart unless-stopped -p 5000:5000 -d shantanuo/flaskspellarm
+
+

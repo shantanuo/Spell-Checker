@@ -55,7 +55,9 @@ def mycheck(myword):
                 if i not in result:
                     list_one_updated.append(i)
 
-            words.append({'original_word': myword[1], 'corrected_word': list_one_updated[0]})
+            import Levenshtein
+            words.append({'original_word': myword[1], 'corrected_word': (list_one_updated[0], Levenshtein.distance(myword[1], list_one_updated[0])) })
+                    
             return
         except:
             pass
@@ -87,9 +89,11 @@ def process():
                 mycheck(('NULL', cleaned.split()[0]))
                 for i in nltk.bigrams(cleaned.split()):
                     mycheck(i)
-        return render_template("success.html", words=words)
+        words1 = list({v['original_word']:v for v in words}.values())
+        words2 = sorted(words1, key=lambda x: x['corrected_word'][1])
 
-
+        return render_template("success.html", words=words2)
+    
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
 

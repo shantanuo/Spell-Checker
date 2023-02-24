@@ -89,8 +89,15 @@ def process():
                 mycheck(('NULL', cleaned.split()[0]))
                 for i in nltk.bigrams(cleaned.split()):
                     mycheck(i)
-        words1 = list({v['original_word']:v for v in words}.values())
-        words2 = sorted(words1, key=lambda x: x['corrected_word'][1])
+#        words1 = list({v['original_word']:v for v in words}.values())
+#        words2 = sorted(words1, key=lambda x: x['corrected_word'][1])
+
+        from collections import Counter
+        ctr = Counter(((item['original_word'], *item['corrected_word']) for item in words))
+
+        words2 = sorted([
+            {'original_word': ow, 'corrected_word': (*cw, count)} for (ow, *cw), count in ctr.items()
+            ], key=lambda item: item['corrected_word'][1])
 
         return render_template("success.html", words=words2)
     
